@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0e0240;
+}
+#title {
+  margin-top: 50px;
+  background: url(./imgs/3.png) no-repeat;
+  background-position: center;
+  background-size: 50%;
+  padding: 50px;
+}
+#titleIntro {
+  color: white;
+  font-size: 2em;
+}
+#titleName {
+  color: white;
+  display: block;
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5em;
+  text-shadow: 4px 8px 40px #924df9;
+}
+#titleP {
+  margin-top: 10px;
+  color: #8C3EFF;
+  font-size: 1em;
+}
+#head {
+  background: url(./imgs/6.png) no-repeat 50% 50%;
+  /* background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+  height: 400px;
+}
+.container {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  color: #bd0fe1;
+  font-size: 20px;
+}
+#logo {
+  display: inline-block;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+}
+
+header {
+  margin-top: 110px;
+  padding-top: 70px;
+  animation: showTitle 300ms forwards 0s linear;
+}
+@keyframes showTitle {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.2;
+  }
+  32% {
+    opacity: 0.4;
+  }
+  46% {
+    opacity: 0.5;
+  }
+  63% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  92% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotate(xx);
+    opacity: 1;
+  }
+}
+#search {
+  margin-top: 10%;
+  /* animation: showTitle 3s forwards 0s linear; */
+  width: 100%;
+  text-align: center;
+  background-image: url(./imgs/2.png);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
+#Sinputs {
+  /* padding: 50px; */
+}
+#Sinputs input {
+  height: 30px;
+  border-radius: 40px;
+  border: #00ec46 2px solid;
+}
+#result {
+  margin-top: 80px;
+}
+.job {
+  margin-top: 20px;
+  text-align: left;
+  border-radius: 0.5rem;
+  border: #6851cc;
+  border-style: groove;
+  padding: 80px;
+  background: url(./imgs/5.png) 50% 50%;
+  animation: jobs forwards 3s;
+}
+@keyframes jobs {
+  0% {
+    margin-left: -1500px;
+    margin-right: 1500px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+/* .job button {
+  margin-top: 5%;
+  padding: 20px;
+  background-color: #00ec46;
+  cursor: pointer;
+  border: 2px solid;
+} */
+.btn {
+  margin-top: 5%;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 4px solid #00ec46;
+  background: transparent;
+  position: relative;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  color: #00962c;
+}
+.btn > h3 {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(45deg, #fff 50%, #00962c 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(45deg, #00962c 50%, transparent 50%);
+  z-index: -1;
+}
+
+.btn > h3,
+.btn:after {
+  background-size: 300%;
+  background-position: 100%;
+  transition: 1s, font-size 0.2s;
+}
+
+.btn:hover > h3,
+.btn:hover:after {
+  background-position: 0;
+  font-size: 1.1em;
+  color: orangeRed;
+}
+.DivToScroll {
+  max-height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 10%;
+  border: 2px #ff3366 solid;
+  animation: show 500ms ease-in forwards;
+}
+.divToScrollHide {
+  max-height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 10%;
+  border: 2px #ff3366 solid;
+  animation: hide 500ms ease-in forwards;
+  display: none;
+}
+@keyframes show {
+  from {
+    height: 100px;
+  }
+  to {
+    height: 400px;
+  }
+}
+@keyframes hide {
+  from {
+    height: 400px;
+  }
+  to {
+    height: 0px;
+  }
+}
+#who {
+  width: 100%;
+  color: #ff3366;
+  background: url(./imgs/4.png) no-repeat 50% 30px;
+  background-position: center;
+  margin-top: 120px;
+  padding: 80px;
+}
+#who  h1{
+  color: #FF3366;
+}
+#who  h4{
+  color: #FF3366;
+}
+footer {
+  height: 800px;
+  width: 100%;
+  text-align: center;
+  background-image: url(./imgs/download.png);
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#last {
+  padding-top: 10%;
+}
+.companyLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
